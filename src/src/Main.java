@@ -23,11 +23,12 @@ public class Main {
             String titulo=set.getString("titulo");
             int duracion=set.getInt("duracion");
             String autor=set.getString("autor");
-            System.out.println(" codigo "+codigo+" titulo "+titulo+" duracion "+duracion);
+            System.out.println(" Codigo: "+codigo+" \n Titulo: "+titulo+" \n Duracion: "+duracion);
 
         }
         set.close();
         statement.close();
+        System.out.println("Primera consulta realizada");
 
     }
 
@@ -41,6 +42,7 @@ public class Main {
         }
         set.close();
         statement.close();
+        System.out.println("Segunda consulta realizada");
     }
 
     public void crearTable() throws SQLException{
@@ -78,7 +80,7 @@ public class Main {
         statement.executeUpdate(sql3);
         statement.executeUpdate(sql2);
         statement.close();
-        System.out.println("Tabla creada!!!!!!!!!!!");
+        System.out.println("Tabla creada");
 
     }
 
@@ -100,7 +102,7 @@ public class Main {
         st.executeUpdate(valueRadio2);
         //st.executeUpdate(valueTema);
         st.executeUpdate(valueTema2);
-        System.out.println("Datos insertados!!!!!!!!!!!");
+        System.out.println("Datos insertados");
 
 
     }
