@@ -92,15 +92,12 @@ public class Main {
                 "'918329456');";
         String valueRadio2="INSERT INTO RADIO (nombre, direccion, web, email, telefono)\n" +
                 "VALUES ('RNE1', 'Direccion de RTVE', 'https://www.rtve.es/RNE1', 'contacto@rtve.es', '916547329')";
-        //String valueTema="INSERT INTO TEMA (codigo, titulo, duracion, autor)\n" +
-        //  "VALUES ('1' 'Back in Black', '300', 'AC-DC')\n";
         String valueTema2="INSERT INTO TEMA (codigo, titulo, duracion, autor)\n" +
                 "VALUES ('2', 'Carnaval', '303', null)\n";
         conectar();
         Statement st= con.createStatement();
         st.executeUpdate(valueRadio);
         st.executeUpdate(valueRadio2);
-        //st.executeUpdate(valueTema);
         st.executeUpdate(valueTema2);
         System.out.println("Datos insertados");
 
