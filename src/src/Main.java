@@ -110,7 +110,7 @@ public class Main {
         System.out.println("1: Para crear las tablas ");
         System.out.println("2: Para insertar las tuplas en las tablas");
         System.out.println("3: Para mostar la primera consulta");
-        System.out.println("4:Para mostrar la primera consulta");
+        System.out.println("4:Para mostrar la segunda consulta");
         System.out.println("Teclee -1 para salir");
     }
 
