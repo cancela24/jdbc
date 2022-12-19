@@ -78,11 +78,14 @@ public class Main {
         statement.executeUpdate(sql3);
         statement.executeUpdate(sql2);
         statement.close();
+        System.out.println("Tabla creada!!!!!!!!!!!");
 
     }
 
     public void insertarDatos() throws SQLException{
-        String valueRadio="INSERT INTO RADIO (nombre, direccion, web, email, telefono) \n" +
+        String
+
+                valueRadio="INSERT INTO RADIO (nombre, direccion, web, email, telefono) \n" +
                 "\tVALUES ('Europa FM', 'Direccion de Onda Cero', 'https://www.ondacero.es', 'contacto@ondacero.es',\n" +
                 "'918329456');";
         String valueRadio2="INSERT INTO RADIO (nombre, direccion, web, email, telefono)\n" +
@@ -97,6 +100,8 @@ public class Main {
         st.executeUpdate(valueRadio2);
         //st.executeUpdate(valueTema);
         st.executeUpdate(valueTema2);
+        System.out.println("Datos insertados!!!!!!!!!!!");
+
 
     }
     public static void mostrarMenu(){
